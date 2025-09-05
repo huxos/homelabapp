@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeLab iOS App Series</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0D1A3A;
+            color: #E5E7EB;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(45, 156, 219, 0.3);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-opacity-80 backdrop-blur-md border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="flex items-center space-x-3">
+                <svg width="32" height="32" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><rect width="1024" height="1024" fill="#0D1A3A" rx="220"/><path d="M296 320L296 704L448 704L448 576L576 576L576 704L728 704L728 320L576 320L576 448L448 448L448 320L296 320Z" fill="url(#gripGradient)"/></svg>
+                <span class="text-xl font-bold text-white">HomeLab Apps</span>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#apps" class="text-gray-300 hover:text-white transition">Apps</a>
+                <a href="#support" class="text-gray-300 hover:text-white transition">Support</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="pt-32 pb-20 text-center bg-cover bg-center" style="background-image: linear-gradient(rgba(13, 26, 58, 0.6), #0D1A3A), url('img/background.jpeg');">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-4">iOS Power Tools for Your HomeLab</h1>
+                <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                    A series of applications designed for geeks who love self-hosting and open source.
+                </p>
+            </div>
+        </section>
+
+        <!-- Published Apps Section -->
+        <section id="apps" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Published Apps</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- KubeGrip Card -->
+                    <a href="KubeGrip.html" class="block rounded-2xl">
+                        <div class="glass-card p-8 rounded-2xl text-center h-full flex flex-col items-center">
+                            <div class="w-20 h-20 mb-6 shadow-lg rounded-2xl">
+                                <img src="icon/KubeGrip.png" alt="KubeGrip Icon" class="rounded-2xl">
+                            </div>
+                            <h3 class="text-2xl font-semibold text-white mb-2">KubeGrip</h3>
+                            <p class="text-gray-400">A modern K8s management tool for iOS, perfect for your HomeLab environment.</p>
+                        </div>
+                    </a>
+                    <!-- Displayable Card -->
+                    <a href="Displayable.html" class="block rounded-2xl">
+                        <div class="glass-card p-8 rounded-2xl text-center h-full flex flex-col items-center">
+                            <div class="w-20 h-20 mb-6 shadow-lg rounded-2xl">
+                               <img src="icon/Displayable.png" alt="Displayable Icon" class="rounded-2xl">
+                            </div>
+                            <h3 class="text-2xl font-semibold text-white mb-2">Displayable</h3>
+                            <p class="text-gray-400">Turn your iPhone/iPad into a digital photo frame for your self-hosted Immich server.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coming Soon Section -->
+        <section id="coming-soon" class="py-20 bg-gray-900 bg-opacity-30">
+            <div class="container mx-auto px-6 text-center">
+                 <h2 class="text-3xl md:text-4xl font-bold text-white">More Apps Coming Soon</h2>
+                 <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Stay tuned for more apps designed to enhance your HomeLab experience!</p>
+            </div>
+        </section>
+
+        <!-- Support Section -->
+        <section id="support" class="py-20 bg-gray-900 bg-opacity-30">
+            <div class="container mx-auto px-6 text-center">
+                 <h2 class="text-3xl md:text-4xl font-bold text-white">Get Support</h2>
+                 <p class="text-gray-400 mt-4 max-w-2xl mx-auto mb-8">Have a problem or a suggestion? We are happy to listen to your voice. Please contact us via the email below, and we promise to get back to you as soon as possible.</p>
+                 <a href="mailto:hujunu0@gmail.com" 
+                    class="inline-block bg-green-500 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-green-600 cta-button">
+                    Contact Us: hujunu0@gmail.com
+                 </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-500">
+            <p>&copy; 2025 huxos.cloud. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <defs>
+        <linearGradient id="kubeGradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#326CE5;stop-opacity:1" /><stop offset="100%" style="stop-color:#2D9CDB;stop-opacity:1" /></linearGradient>
+        <linearGradient id="gripGradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#10E3B8;stop-opacity:1" /><stop offset="100%" style="stop-color:#00D1D1;stop-opacity:1" /></linearGradient>
+    </defs>
+
+</body>
+</html>
