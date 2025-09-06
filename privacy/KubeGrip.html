@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KubeGrip - Privacy Policy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0D1A3A;
+            color: #E5E7EB;
+        }
+        
+        .policy-content p {
+            @apply mb-4 leading-relaxed text-gray-300;
+        }
+        .policy-content ul {
+            @apply list-disc pl-6 space-y-2 mb-4 text-gray-300;
+        }
+        .policy-content strong {
+            @apply text-white font-semibold;
+        }
+        .policy-content code {
+            @apply bg-gray-700 text-gray-200 px-2 py-1 rounded-md text-sm;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-slate-900 bg-opacity-70 backdrop-blur-md border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <!-- App Icon SVG -->
+                <img src="../icon/KubeGrip.png" alt="KubeGrip Icon" class="w-8 h-8 rounded-lg">
+                <span class="text-xl font-bold text-white">KubeGrip</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <!-- You can add a link back to the main support page if it's hosted separately -->
+                <!-- <a href="index.html" class="text-gray-300 hover:text-white transition">Home</a> -->
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-16">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">Privacy Policy</h1>
+            <p class="text-gray-400 mb-8">Effective Date: September 7, 2025</p>
+            
+            <div class="policy-content">
+                <p>Welcome to KubeGrip! We understand the importance of privacy to you and are committed to protecting the security of your personal information. This Privacy Policy aims to explain how KubeGrip handles your data.</p>
+                <p>This application is developed and operated by <strong>Pacman Hu</strong> (hereinafter referred to as "we").</p>
+
+                <h3 class="text-2xl font-extrabold text-white mt-6 mb-3">1. Personal Information We Do Not Collect</h3>
+                <p>KubeGrip's core design philosophy is to be a pure client-side tool, where you control your own data. We <strong>do not</strong> collect, store, or transmit any of your personally identifiable information or sensitive data to our servers in any form. This includes, but is not limited to:</p>
+                <ul>
+                    <li><strong>Your Kubernetes configuration information (<code>kubeconfig</code>)</strong>: All cluster connection information you import, including server addresses, certificates, keys, and tokens, are encrypted and <strong>stored only in your device's local secure area (e.g., Keychain)</strong>. We cannot access this information.</li>
+                    <li><strong>Personally Identifiable Information</strong>: We do not ask you to provide your name, email address, phone number, or any other information that can identify you personally.</li>
+                    <li><strong>Your operational data in the cluster</strong>: Any operations you perform on your Kubernetes cluster through KubeGrip (such as viewing logs, scaling, deleting resources, etc.) only occur between your device and your target server.</li>
+                </ul>
+
+                <h3 class="text-2xl font-extrabold text-white mt-6 mb-3">2. Non-Personal Information We May Collect</h3>
+                <p>To improve KubeGrip's performance and user experience, we may collect some completely anonymous, non-personal diagnostic data. This includes:</p>
+                <ul>
+                    <li><strong>Application Crash Reports</strong>: If the application crashes, the system may automatically collect anonymous crash logs to help us identify and fix problems. These logs do not contain any personal information.</li>
+                    <li><strong>Performance and Usage Analytics</strong>: We may collect anonymous usage data, such as feature usage frequency, application launch times, etc., through Apple's App Analytics service. This information is aggregated and cannot be traced back to specific users, and you can always turn off sharing with developers in your system settings.</li>
+                </ul>
+
+                <h3 class="text-2xl font-extrabold text-white mt-6 mb-3">3. Use of Data</h3>
+                <p>The sole purpose of any non-personal information we collect is to:</p>
+                <ul>
+                    <li>Analyze and fix errors and crashes in the application.</li>
+                    <li>Optimize application features and improve the overall user experience.</li>
+                    <li>Understand how users interact with the application to guide future development directions.</li>
+                </ul>
+
+                <h3 class="text-2xl font-extrabold text-white mt-6 mb-3">4. Third-Party Services</h3>
+                <p>KubeGrip uses the open-source library <code>swiftkube/client</code> to interact with the Kubernetes API. This library is a client-side tool and does not send any of your data to third parties.</p>
+                
+                <h3 class="text-2xl font-extrabold text-white mt-6 mb-3">5. Children's Privacy</h3>
+                <p>KubeGrip is not intended for children under the age of 13. We do not knowingly collect any personal information from children.</p>
+
+                <h3 class="text-2xl font-extrabold text-white mt-6 mb-3">6. Changes to This Privacy Policy</h3>
+                <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page. We encourage you to review this page periodically for the latest information.</p>
+
+                <h3 class="text-2xl font-extrabold text-white mt-6 mb-3">7. Contact Us</h3>
+                <p>If you have any questions or suggestions regarding this Privacy Policy, please feel free to contact us at:</p>
+                <ul>
+                    <li><strong>Email</strong>: <a href="mailto:hujunu0@gmail.com" class="text-blue-400 hover:underline">hujunu0@gmail.com</a></li>
+                </ul>
+                
+                <p class="mt-8">Thank you for using KubeGrip!</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-500">
+            <p>&copy; 2025 KubeGrip. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
